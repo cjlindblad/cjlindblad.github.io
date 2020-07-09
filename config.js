@@ -27,8 +27,7 @@ module.exports = {
   author: {
     name: "CJ Lindblad",
     photo: "/photo.jpg",
-    bio:
-      "Stockholm based software developer. Dipping my toes all over the place.",
+    bio: "Stockholm based software developer.",
     contacts: {
       email: "cj.lindblad@hey.com",
       facebook: "",
