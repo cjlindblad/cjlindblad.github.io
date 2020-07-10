@@ -3,6 +3,7 @@
 <url> <loc>https://cjlindblad.github.io/tags</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://cjlindblad.github.io/categories</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://cjlindblad.github.io/posts/reading-some-ruby-source-code</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://cjlindblad.github.io/posts/building-some-ruby-source-code</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://cjlindblad.github.io/pages/about/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://cjlindblad.github.io/pages/contacts/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://cjlindblad.github.io/tag/ruby</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
