@@ -10,7 +10,7 @@ tags:
 description: "Where we add a pointless method to the Ruby language!"
 ---
 
-In [my last post](reading-some-ruby-source-code), I fumbled around in the Ruby source code and took a look at an internal function that is not exposed via the public Ruby API. It's called `ary_make_hash` and turns an array into a hash where each key value pair has the same value.
+In [my last post](reading-some-ruby-source-code), I fumbled around in the Ruby source code and took a look at an internal function that is not exposed via the public Ruby API. It's called `ary_make_hash` and turns an array into a hash where each key-value pair has the same value.
 
 In imaginary Ruby, it would work like this:
 
@@ -23,9 +23,9 @@ As a learning exercise, let's alter the Ruby source so that the example above wo
 
 ### Building Ruby
 
-First we gotta be able to build Ruby. There's a [guide](https://github.com/ruby/ruby/blob/master/README.md#how-to-compile-and-install) in the repo, but that just resulted in a wall of C compiler errors sprinkled with complaints about the openssl lib. I was just about to desperately try it on a virtual linux box instead (I'm running MacOS), when I found [this](https://github.com/ko1/rubyhackchallenge/blob/master/EN/2_mri_structure.md#exercise-build-mri-and-install-built-binaries).
+First, we gotta be able to build Ruby. There's a [guide](https://github.com/ruby/ruby/blob/master/README.md#how-to-compile-and-install) in the repo, but that just resulted in a wall of C compiler errors sprinkled with complaints about the openssl lib. I was just about to desperately try it on a virtual Linux box instead (I'm running macOS), when I found [this](https://github.com/ko1/rubyhackchallenge/blob/master/EN/2_mri_structure.md#exercise-build-mri-and-install-built-binaries).
 
-A detailed guide for getting started on hacking the MRI (the standard Ruby C implementation)! This worked like a charm on the latest stable branch (ruby_2_7). I really feel like this should be on the official README. Possible pull request coming up!
+A detailed guide for getting started on hacking the MRI (the standard Ruby C implementation)! This worked like a charm on the latest stable branch (ruby_2_7). I feel like this should be on the official README. Possible pull request coming up!
 
 ### Hacking Ruby
 
@@ -82,7 +82,7 @@ ary_tmp_hash_new(VALUE ary)
 }
 ```
 
-It looks like we should do fine if we just use the call to `rb_hash_new_with_size` without calling the clear function afterwards. Let's make a new function, and call it `rb_ary_make_hash` to indicate that it's visible to Ruby (with the `rb_` prefix):
+It looks like we should do fine if we just use the call to `rb_hash_new_with_size` without calling the clear function afterward. Let's make a new function, and call it `rb_ary_make_hash` to indicate that it's visible to Ruby (with the `rb_` prefix):
 
 ```c
 static VALUE
