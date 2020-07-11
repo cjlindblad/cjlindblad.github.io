@@ -25,7 +25,7 @@ As a learning exercise, let's alter the Ruby source so that the example above wo
 
 First, we gotta be able to build Ruby. There's a [guide](https://github.com/ruby/ruby/blob/master/README.md#how-to-compile-and-install) in the repo, but that just resulted in a wall of C compiler errors sprinkled with complaints about the openssl lib. I was just about to desperately try it on a virtual Linux box instead (I'm running macOS), when I found [this](https://github.com/ko1/rubyhackchallenge/blob/master/EN/2_mri_structure.md#exercise-build-mri-and-install-built-binaries).
 
-A detailed guide for getting started on hacking the MRI (the standard Ruby C implementation)! This worked like a charm on the latest release branch. I feel like this should be on the official README. Possible pull request coming up!
+A detailed guide for getting started on hacking the MRI (the standard Ruby C implementation)! This worked like a charm on the latest release branch (`ruby_2_7`). I feel like this should be on the official README. Possible pull request coming up!
 
 ### Hacking Ruby
 
