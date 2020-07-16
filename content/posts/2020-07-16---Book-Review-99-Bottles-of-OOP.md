@@ -42,6 +42,6 @@ There's a lot of discussion about how it _feels_ to write code. Tiny steps backe
 
 This book probably isn't for everyone. For the right person though, it's excellent. A lot of the lessons within will be learned with experience. And if you haven't experienced the problems that the book addresses, it might not resonate with you. But for someone with a moderate amount of experience, I think this one really hits home.
 
-The [SOLID](https://en.wikipedia.org/wiki/SOLID) principles (and relatives) never really stuck with me before. Now I can _feel_ the value of the [Open-Closed Principle](https://en.wikipedia.org/wiki/Open%E2%80%93closed_principle) because this book made use it to implement changing requirements with ease. I have an intuition for why we should conform to the [Law of Demeter.](https://en.wikipedia.org/wiki/Law_of_Demeter) The tests will be way easier to write!
+The [SOLID](https://en.wikipedia.org/wiki/SOLID) principles (and relatives) never really stuck with me before. Now I can _feel_ the value of the [Open-Closed Principle](https://en.wikipedia.org/wiki/Open%E2%80%93closed_principle) because this book made me use it to implement changing requirements with ease. I have an intuition for why we should conform to the [Law of Demeter.](https://en.wikipedia.org/wiki/Law_of_Demeter) The tests will be way easier to write!
 
 But above all, I feel like I've given a license to not abstract stuff I don't yet understand. And more importantly, to tear up existing abstractions that smells bad!
